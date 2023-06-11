@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+#column-container {
+    padding: 22% 6%;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display';
+    margin-top: 10%;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
+}
+
+p {
+font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 10%;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    text-align: center;
+    border-radius: 50px;
+    height: 48px;
+    width: 145px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.column-item {
+    flex: 1 1 0px;
+    padding: 45px;
+    height: 450px; 
+     
+}
+
+.description-container {
+    height: 160px;
+}
+
+#column-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#column-1-button {
+    color:hsl(31, 77%, 52%);
+}
+
+#column-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#column-2-button {
+    color: hsl(184, 100%, 22%);
+}
+
+#column-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+#column-3-button {
+    color: hsl(179, 100%, 13%);  
+}
+
+@media (min-width: 710px) {
+    #column-container {
+        padding: 8% 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }
+
+    .column-item {
+        width: 350px;
+        height: 500px;
+    }
+
+    .description-container{
+        /*acts as a container for desc text to make responsivity more fluid and aligned between buttons*/
+        height: 245px;
+    }
+    
+    #column-1 {
+        border-radius: 10px 0px 0px 10px;
+    }
+    #column-3 {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
